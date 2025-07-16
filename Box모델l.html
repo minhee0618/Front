@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+
+            /**margin,padding  top->right-bottom->left  **/
+            margin: 10px 20px 10px 20px;
+            margin: 10px 20px;
+            margin-top:10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            /**border**/
+            border: 1px solid black;
+        }
+
+
+        a{ /*  a는 inline block 크기 지정이 안된다 */
+           /*width: 100px; 적용x*/
+           /*height: 100px; 적용x*/
+            border: 1px solid black;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h2>Box Model</h2>
+    <p> 태그는 브라우저에서 Box 형태로 표현된다</p>
+    <p> 콘텐츠(contents), 패딩(padding), 보더(border), 마진(margin)으로 구성</p>
+
+    <div class="box">
+        html,css Class
+    </div>
+
+    <a href="https://www.naver.com">hyper text link</a> <br>
+    <a href="https://www.naver.com">hyper text link</a>
+
+</body>
+</html>

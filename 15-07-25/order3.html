@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{ 
+            width: 1000px;
+            border: 1px solid red;}
+        
+        .wrapper-1{
+            display: flex;
+            padding: 30px;
+            margin: auto;
+        }
+        .img-wrapper{
+            width: 40%;
+        }
+        img{
+            width: 100%;
+        }
+        .order-wrapper{
+            width: 50%; 
+            background-color: #9e6b4f;
+            box-shadow: black 0 0 10px;
+            border-radius: 15px ;
+            padding: 10px 10px 30px 10px; 
+        }
+        h2{
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 15px;
+        }
+        label{
+            color: white            ;
+            display: block;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 20px 10px 10px;
+        }
+        input{
+            padding: 10px;
+            width: 90%;
+            margin-left: 10px;
+            border: 1px solid #9e6b4f;
+            border-radius: 10px;
+        }
+        .button-wrapper{
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: 80px auto 40px;
+        }
+        button{
+            width: 40%;
+            padding: 20px;
+            font-size: 15px;
+            font-weight: 700;
+            border: #9e6b4f;
+            border-radius: 10px;
+            color: white;
+            background-color: #9e6b4f;
+            box-shadow: black 0 0 10px;
+        }
+        button:hover{
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="wrapper-1">
+        <div class="img-wrapper">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQEhURExEVFhUVGBIZFxgWEhcVFRkYGxYWFxgVGxMYHSggGBslGxcXITEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGzUmICUvLS0zLy0tLS8tLTAtLS0tLS0tLTUtLS0tLS0tLTUtLS0tLS0tLS8tLS0tLS0tLS0tK//AABEIAMsA+AMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcBAv/EADoQAAIBAgUCAwYGAAQHAQAAAAABAgMRBAUSITFBUQZhcRMigbHB8AcyQpGh0XKCkuEjJDNDUmLxFf/EABkBAQADAQEAAAAAAAAAAAAAAAACAwQBBf/EACMRAQACAgMAAQUBAQAAAAAAAAABAgMREiExBBMiMlFxUkH/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjs1x7p2jBLU1ffhL06mjRzucbe0imn22f7dSm3yKVtxlbXDa0bhPgx0K0ZrVF3RkLonaoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAV3Hz1Yiaf6VD5X+pH46ppXBmzqpoxf+OMPTqvoamYNWulz+/zMMa5W3+26sdV/jNlOZ296L/xLo/6di20KynFST2ZyChmUqGI09G91fldWvQvuS5nGD0t+5Lf0Z2uWMdoifJcy4ZtG49WYAG1iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWfGVC3s63RPQ7dNTWl/Bq3xIjES1e6y1+IsPGph5xlG6em6vb9S6rgq2Hy9q0Ks22vyzTV7dLrh7eRiyxxy7/AG3YJ3T+KP4xbpyhfo07pb/uWbK9VSzT2WnfvsjzxZlaq6ISf5WnfvHy8zPgpRWmMeEuhm+VEW1DVWetwsNLOJxio7Oy69jdhmc7JtJ7ehXI1PeSf2iYqu0E+n/wuw5bTE9+MmXHWNdJfCZlCe3D8zJicfTp21SSvx1/hFZgyLzCq4tu5y/zLVr527X4sWn1acTn8eKcdT7vZftyyIxWeS61G/KOy/jcpmOzzfQtTtzvZP48mrQxEnZ7Jdl/fUnW17Ru8pfRrHUQu1Cqqm6k/wCSZyTFSU/ZNtp3td3s1v8A2VLL62jfez7r5lr8MR16qr4Xur5tka11kji5f8J2sIAPQYAAAAAAAAAAAAAAAAAAAAAAAAGPEU9UZR7pri/8FPxdXRaMotNdNr+TLoU7xrT0adEN6l7yXN+xm+TTlXcNHx76tpX8TOVaaS27dybwOHpw2dnLa/7FExuDruajTmlJbx1t6ezvZ369xlNfMY4pLEU4yi1bVTTUVa1nu99vp2MX0/Z21zbfS9Y3D+8pR7r6/wCxM4zDt00vQ9yrDKVm97L4XILxV4mWH2abk5aYQX5pO/BbjpxrM/6VXtu2v0340HFERndHVB/m/wAqTb8lcr/h38R3iK6w9ehGmpNRjONT2iTauk9lz3Ra6m/b4blWSvCdTCzHblG4c/eVVJ1Go7ve9/0+TfHHa6Nyhh1GdnLpv69UrluVr2cbx7f7Efj8qlFqrToxvdXbepJX50dbFtc1ZjpbZ8UISqShSpptt7dvXt6nR8uwqo04010W77vqyP8ADeWexpqc96k1eT7LpFdiZNWHHr7p9l52bJudR4AAvUgAAAAAAAAAAAAAAAAAAAAAAABB+LoL2Op/paa9ScIrxHQ10ZJc8kbRuJSrOpUCjhk5RqyfCdkmn14uy0Zfg7rVU222XZERgaadlJL3dO1la9yPzb8QKcavsaVOVSUdnZPm+67sorgiZ5T2utmnWodDwdSKVo8Fd8T+GqeIqRqtyTTUk4ys1JcMx+FPF1LFydLS6dSPMXs/5LNUSlsW3puNQqrfU7c4wvgzCUJKdpSkneOqdkn3UYpE7hcBOK3nddNvmTOIwULp/NmBTs2jDfFaZ++WuuSIj7UVRcva6FHaXDvf+S0YLKdLTm723Ueif1NLLsOpVYvT+Xe5Yi74/wAesfdKvNmt5AADYygAAAAAAAAAAAAAAAAAAAAAAAAAAGpmqfspW7G2aOc1tFKTOSQpcd4ysveVn+1/7OP55l9SniKj9ompbxfD72fmuPgvQ7Biqd3qhxJPj0Zy7NMszCtNyU9cXJuD93dX2e67bkazpfXFN96TP4cZbXniliq19MNTUpN3k7OKVnu1vzxsdhljYRTbasrt3OQ5RhMfhqbnUlTUY/pSepvpFWdr3+ZaMqdebjKv+flU1tCHZy6yZ2bOXw2p6l3j6s566i0RbtCK5t0cl0bNyhJyl5+nGx9UMCm7yd35khJKK4KrVmZ7Itrxi9q6e8ef4JnC11NX69Sv0nqfdEjgpaZpdxjt3py9UqAC9UAAAAAAAAAAAAAAAAAAAAAAAAAAAQniz/ou6f0JsiPFL/5efw+ZG/4ylT8oUzBYqys36eXme1XGKa4u9rLZd16bsh5zvLk3ITulF7meLbhrpe2K26pKFeLs0r2/Lfez/wDL1N3L3Z3fXkicPSa3SZu4Wq1bpZ7+n38ycWVZLWvO5T1OvbdfflYxYrFOS223saeJxGlqyunzY2sFDUtvU7M76QiNdsuFhpRlozvONu58yg3tue0o6ZR8mivWuoT9T4ANTOAAAAAAAAAAAAAAAAAAAAAAAAAAARfiSN8PNenzJQ0s3inSld9GctG4l2vrlUo8mbCU5Sdl9/A3acFraaSRMYbDRj7ytd9uplpG4aLy8wGGmudyRngdWzRmw0rco3nNFuoVbadPK4pb7mSOH07I2VK5grYpR2Q1BuX3FW5Zr1J7rh7r5mtUxtnx8Ovr5HtCvqnGy6rm2xG148TrWfVlTPTxI9NCgAAAAAAAAAAAAAAAAAAAAAAAAAAHxVqKKcm7JclJzPxGsRWVKG0Yu7vy2SvjTGOFNRT/ADXucyw1Z+3v5mfLknfFox441yS+Ypxqtp7co2MDmU4u97rzf1MOdQbafkaVGpePH3srmSbzWemmKxMdrxl2ZRnZdSQi1ff9znmW43TUt99C20azklv9/dzTjvyjtnvTU9JHGYpxbiiHq4iTemPL69Fft5kpOnfdmlUo+/G3C+/v0GTeunMev+vjDYW3PvX69b+vUkKFO0o+qPijGyt1R7HlX23M1Z1K+Y3C0IHzB7H0emwAAAAAAAAAAAAAAAAAAAAAAAAAPmc0ldtJebsQ2Y+K8JQ2lWi32i7nJmI9diJnxDfiHPaCv0kcyqYh06iknbcvmf59RxsdMVuk3F349V52Of47lp8mPJ+W4a8f46lbqFb28VLqufNG+sAnGyXkVfwdjv8Ai+yf6k0vXn6HSsvwd/MjOHn3B9XhOpU9ZHJy1R6fbJrK78PoWWeEstkiqZfir6m+rfzv9CdcfDW5Rtk5pupPZGvhZX+FzVljVbk+crxalJx9Sd++oRr0kNTTubtGjqa27X7GbD0Ivexs1Y2WxDHgmJ3Mu3zbjUN5I9PIvY9NjMAAAAAAAAAAAAAAAAAAAAAB5LyPQBXs2yOdf89SVu0f6uc/8QfhziG3KhKUn2moxX+pSZ2EEJpEp1yTHjheS+DsxoVL1aEZR7Krx58bn34oyurBOpKk0u+382O4NXITP/DVPFxcZNq/YjOKHYyS4Vk1S2OoUov3nUgrLq9W/wCyUjvOF0wVtW65XYoGB8JwyrEyxTnfVCUVe63k11fHBNf/ALKclZpqM2m7/wDo3f8AexzfFLU3W+M097nOszXsMRVpX2i3P/LLdfOxbKmawglPUnC29uU+b281f7ZD5h4XWYVXioVqkFOCg0oqztffffr/AAcn7iN19U2rnKb2lt9L7HkPEcaUotbvUuH0bsyfl+E27axEr+aX0NWr+GkqT1KCqW+L9bHPp6T5xMOi4ed0mbPtV1IDA453UKnuT6p7X9LmzXzGnGSgpRvzbUr272LNquKew1VPa/BnKtVzNQdlJOVr2vva/YseFr64qXclW20ZrpmABJEAAAAAAAAAAAAAAAAAAAAAAAAAAHjVzC8HTf8A24f6F/RnAGKGHhHiEV6RSMtgAAAA8lFPlGGWEpt3dODffSr/ACM4AwLB0739nC/fQr/vYzJHoAAAAAAAAAAAAAAP/9k=" alt="dog-image">
+        </div>
+        <div class="order-wrapper">
+            <h2>강아지 간식</h2>
+            
+            <label>주문자 이름</label>
+            <input type="text" class="order-name">
+
+            <label>주문 수량</label>
+            <input type="text" list="choice" class="order-number" placeholder="주문 수량을 선택하세요">
+                <datalist id="choice">
+                    <option value="1">1개</option>
+                    <option value="2">2개</option>
+                    <option value="3">3개</option>
+                </datalist>
+            
+            <label>전화번호</label>
+            <input type="number" class="order-number">
+
+            <label>주소</label>
+            <input type="address" class="order-address">
+
+        </div>
+        </div>
+
+        <div class="button-wrapper">
+            <button class="order">주문하러가기</button>
+        </div>
+    </div>
+</body>
+</html>

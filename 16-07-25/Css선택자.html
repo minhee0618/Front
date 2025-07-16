@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{color: red;}
+
+        .point{color: red;}
+
+        .wrap a{
+            color: #ccc;
+            text-decoration: none;}
+
+        .wrapper > a{
+            color: #ccc;
+            text-decoration: none;}
+    </style>
+</head>
+
+<body>
+    <h2>CSS선택자</h2>
+    <ul>
+        <li>Tag 선택자 ( ) </li>   <!-- ( ) -->
+        <li>Class 선택자 ( . )</li>  <!-- ( . ) --> <!--여러개 선택 가능-->
+        <li>자손 선택자 (스페이스) - 부모 아래 어디든 </li>   <!-- (스페이스) --> <!--부모를 기준으로 그 아래 어디있던 상관 X-->
+        <li>자식 선택자 ( > ) - 부모 바로 아래</li>  <!-- ( > ) --> <!--부모를 기준으로 그 바로 아래 -->
+    </ul>
+
+    <hr>
+
+    <h2>Tag 선택자</h2>
+    <p>p태그 입니다.1</p>
+    <p>p태그 입니다.2</p>
+    <p>p태그 입니다.3</p>
+
+    <h2>Class 선택자</h2>
+    <h4 class="point">제목.1</h4>
+    <h4 class="point">제목.2</h4>
+    <h4>제목.3</h2>
+
+    <h2>자손 선택자</h2>
+    <div class="wrap">
+        <div>
+            <a href="">Click here</a>
+        </div>
+    </div>
+
+    <h2>자식 선택자</h2>
+    <div class="wrapper">
+        <div>
+            <a href="">Click here</a>
+        </div>
+        <a href="">Click Now</a>
+    </div>
+
+</body>
+</html>

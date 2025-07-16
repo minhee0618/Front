@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--텍스트-->
+    <input type="text" id="user-input" placeholder="Type something here...">
+    
+    <!--넓은 텍스트-->
+    <textarea id="user-textarea" placeholder="Type a longer text here..." rows="4" cols="50">
+    </textarea>
+
+    <!--버튼-->
+    <button id="order-btn">Order</button>
+    
+    <!--옵션-->
+    <select id="order-select">
+        <option value="choose" selected>Choose...</option>
+        <option value="watermelon">수박</option>
+        <option value="apple">사과</option>
+        <option value="peach">복숭이</option>
+    </select>
+    
+    <!--채크박스-->
+    <input type="checkbox" value="seoul" checked> 서울
+    <input type="checkbox" value="busan"> 부산
+    <input type="checkbox" value="jeju"> 제주도
+    
+    <!--라디오버튼-->    
+    <input type="radio" value="M" name="gender">남자
+    <input type="radio" value="F" name="gender">여자
+
+    <label>
+        <input type="radio" value="M" name="gender"> 남자
+    </label>
+    <label>
+        <input type="radio" value="W" name="gender"> 여자
+    </label>
+
+    <!--날짜-->
+    <input type="date" id="date-input"> 
+
+    <!--색상-->
+    <input type="color" id="color-input">
+
+    <!--파일업로드-->
+    <input type="file" id="file-input">
+
+    <!--데이터 목록-->
+    <input type="text" list="choice" placeholder="Choose a fruit...">
+    <datalist id="choice">
+        <option value="watermelon">수박</option>
+        <option value="apple">사과</option>
+        <option value="peach">복숭이</option>   
+    </datalist>
+
+    <!--fieldset, legend 태그-->
+    <fieldset>
+        <legend>주문정보</legend>
+        <label for="userid">아이디<input type="text" id="order-id" placeholder="아이디"></label>
+        <label for="username">이름 <input type="text" id="order-name" placeholder="이름"></label>
+        <label for="userphone">전화번호<input type="text" id="order-phone" placeholder="전화번호"></label>
+    </fieldset>
+
+    <!--placeholder-->
+    <input type="text" id="placeholder-input" placeholder="주소를 입력하세요...">   
+
+    <!--disabled-->
+    <input type="text" value="text" disabled>
+</body>
+</html>

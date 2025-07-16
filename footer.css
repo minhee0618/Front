@@ -1,0 +1,40 @@
+.footer{
+    /**display;flex**/
+    display: flex;
+    width: 1400px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 50px auto;
+    padding: 10px;
+}
+.img{
+    width: 20%;
+    height: 300px;
+    border: 1px solid black;
+}
+.img img{
+    width: 100%;
+}
+.info-1{
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+.info-1 .copyright{
+    margin-top: 40px;
+    font-size: 12px;
+}
+.info-2{
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+.info-2 .info-2-point{
+    color: blue;
+}
+.confirm{
+    margin-top: 50px;
+    color: #999;
+}

@@ -1,0 +1,102 @@
+footer{
+    width: 1000px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+.logo{
+    height: 120px;
+    background-color: rgb(151, 40, 40);
+}
+.logo img{
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+.info-1{
+    height: auto;
+}
+.info-1 .nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.info-1 .nav a{
+    color: black;
+    margin: 0 100px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.info-1 .nav a:hover{
+    color: rgb(151, 40, 40) ;
+}
+.info-1 .info-1-wrapper{
+    display: flex;
+    padding: 5px 30px;
+}
+.producer_timeline{
+    width: 50%;
+}
+.subscribe{
+    width: 50%;
+    margin-top: 40px;
+}
+.subscribe-text{
+    font-weight: 700;
+    margin-bottom: 15px ;
+}
+.subscribe-input{
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid #4e7d61;
+    padding: 10px; 
+}
+.subscribe-btn{
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    background-color: #4e7d61;
+    border: 1px solid #4e7d61;
+    border-radius: 5px;
+}
+.subscribe-btn:hover{
+    background-color:rgb(151, 40, 40) ;
+    border: 1px solid rgb(151, 40, 40);
+}
+.info-2{
+    height: auto;
+}
+.brand{
+    width: 100%;
+}
+.brand img{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+.sns-p{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.sns{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 10px auto; 
+}
+a{  
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copyright{
+    background-color: rgb(151, 40, 40);   
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(39, 9, 9);
+}
+.copyright p{
+    font-size: 14px;
+    color: white;
+    margin: 20px;
+}
