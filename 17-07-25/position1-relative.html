@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap0{
+            border: 1px solid black;
+            height: 200px;
+            
+        /** left , right , bottom , right 
+         >> (position: static;)기본 position에서는 적용 x
+         >> 부모 영역에 position : relative;**/
+            position: relative;
+        }
+        .item0{
+            width: 200px;
+            height: 100px;
+            background-color: orangered;
+        
+            /** >> 자식요소에 position:absolute; **/
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .wrap2{
+            border: 5px dashed black;
+            width: 500px;
+            height: 500px;
+
+            position: relative;
+        }
+        .item{
+            position: absolute;
+            padding: 10px;
+            background-color: orangered;
+            color: white;   
+        }
+        .item1{
+            top: 0;
+            left: 0;
+        }
+        .item2{
+            top: 50px;
+            right: 20px;
+        }
+        .item3{
+            bottom: 5px;
+            left: 200px;
+        }
+        .item4{
+            top: 20px;
+            right: 30px;
+        }
+        .item5{
+            bottom: 10px;
+            left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h2>부모를 기준으로 자식요소를 원하는 위치에 배치하려면</h2>
+    <ul>
+        <li>부모영역에 position: relative;</li>
+        <li>자식요소에 position: absolute</li>
+    </ul>
+
+    <div class="wrap0">
+        <div class="item0"></div>
+    </div>
+
+    <h2>borard판을 기준(부모영역을 기준으로)으로 <mark> 각 box를 마음대로 붙이려면....</mark></h2>
+    <div class="wrap2">
+        <div class="item item1">a</div>
+        <div class="item item2">b</div>
+        <div class="item item3">c</div>
+        <div class="item item4">d</div>
+        <div class="item item5">e</div>
+    </div>
+</body>
+</html>

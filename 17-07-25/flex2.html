@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex1{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;  /**가로 가운데**/
+            align-items: center;  /**세로 가운데*/
+        }
+        .item1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .flex2{
+            width: 600px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: space-between;
+        }
+        .item2{
+            width: 100px;
+            border: 1px solid red ;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>flex를 사용하여 자식요소 정렬</h2>
+    <div class="flex1">
+        <div class="item1"></div>
+    </div>
+    <br>
+    <div class="flex2">
+        <div class="item2">a</div>
+        <div class="item2">b</div>
+        <div class="item2">c</div>
+    </div>
+</body>
+</html>

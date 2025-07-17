@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search-bar{
+            display: flex;
+            border: 1px solid black;
+            width: 300px;
+            height: 50px;
+        }
+        .search-text{
+            width: 230px;
+            margin-left: 20px;
+            border: none;
+            outline: none;
+        }
+        .search-icon{
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-image: url(data:image/png;base64,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);
+            background-size: cover;
+            background-position:center ;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input class="search-text" type="text" placeholder="검색어를 입력하세요">
+        <div class="search-icon"></div>
+    </div>
+</body>
+</html>

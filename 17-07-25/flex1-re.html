@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 800px;
+            border: 5px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+            /**box-sizing: border-box; -보더 + padding를 포함해서 너비 계산 */
+        }
+        .item{
+            border: 1px solid black;
+            width: 33.3%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+    </div>
+</body>
+</html>

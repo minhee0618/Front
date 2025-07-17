@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1200px;
+            border: 2px solid #ccc;
+            margin: 40px auto;
+        }
+        h1{ text-align: center;
+            font-size: 36px;
+            font-weight: 900;
+        }
+        .review-wrapper{
+            background-color: rgba(245, 206, 168, 0.4);
+            display: flex;
+            padding: 20px;
+        }
+        .review-wrapper img{
+            width: 600px;
+        }
+        .review{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 600px;
+        }
+        p{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .review textarea{
+            width: 80%;
+            margin: 10px auto;
+            font-size: 12px;
+            border: rgb(0, 0, 0);
+        }
+        .detail{
+            text-align: center;
+        }
+        .detail ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 100px;
+        }
+        .detail p{
+        text-align: left;
+        margin-left: 10px;
+       }
+        select { 
+            width: 250px;
+            padding: 10px;
+        }
+        #select-textarea{
+            width: 60%;
+            margin: 20px auto;
+        }
+        .info{
+            margin-top: 50px;
+            text-align: center;
+        }
+        #seller-textarea, #add-textarea{ 
+            width: 60%;
+            margin: 10px auto 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Review Detail</h1>
+   
+    <div class="review-wrapper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tm8gCOaAnL2RMAYzQtcZJYw4Icqo46IxRw&s" alt="food-img">
+        <div class="review">
+            <p>Review</p>
+            <textarea id="review-textarea" rows="15" placeholder="리뷰를 작성해주세요"></textarea>
+         </div>
+    </div>
+   
+    <div class="detail">
+        <ul>
+            <li>
+                <p>연령대</p>
+                <select id="age-select">
+                    <option value="10" selected>10대</option>
+                    <option value="20">20대</option>
+                    <option value="30">30대</option>
+                    <option value="40">40대</option>
+                    <option value="50">50대</option>
+                    <option value="60">60대</option>
+                    <option value="70">70대</option> 
+                </select>
+            </li>
+            <li>
+                <p>만족도</p>
+                 <select id="star-select">
+                    <option value="1" >★</option>
+                    <option value="2">★★</option>
+                    <option value="3">★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="5" selected>★★★★★★</option>
+                </select>
+            </li>
+        </ul>
+        <textarea id="select-textarea" rows="5" placeholder="평가를 해주세요"></textarea>
+    </div>
+    
+    <div class="info">
+        <div class="seller-info">
+            <p>판매정보</p>
+            <textarea id="seller-textarea" rows="10" placeholder="정보를 작성해주세요"></textarea>
+        </div>
+        <div class="add-info">
+            <p>추가 정보</p>
+            <textarea id="add-textarea" rows="10" placeholder="정보를 작성해주세요"></textarea>
+        </div>
+    
+    </div>
+</body>
+</html>
