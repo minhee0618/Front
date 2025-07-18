@@ -1,0 +1,94 @@
+https://special-rainstorm-825.notion.site/HTML-CSS-173c031ede41807181ccf2d167d03650
+
+HTML(HyperText Markup Language)
+
+1. 기본구조 // ! + enter //
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>    
+    </body>
+</html>
+
+<head>: 웹페이지의 정보와 설정
+<body>: 실제 웹 브라우저에 표시되는 콘텐츠 부분
+
+2. 기본 구성 요소
+ <태그명 속성명="속성값">
+
+2.1 텍스트 관련 태그
+<h1>~<h6>    제목태그
+<p>          문단태그
+<span>	     인라인 텍스트 구간
+<strong>	 강조 (굵게)
+<em>	     강조 (기울임)
+<br>	     줄바꿈
+
+2.2 링크&이미지 관련 태그
+<a href="">	        하이퍼링크 (다른 페이지, 외부 링크 등)
+<a href="' target="_self/_blank">
+<a href="#123"></a>
+<h2 id="123"></h2> -  문서 내에서 이동
+
+<img src="" alt="">	이미지 표시
+
+2.3 리스트 관련 태그
+<ul>	순서 없는 리스트
+<ol>	순서 있는 리스트
+<li>	리스트 아이템
+
+2.4 구조 태그
+<div>	블록 레벨 구역
+<section>	논리적 구역 나누기
+<article>	독립된 콘텐츠 영역
+<header>	머리말 영역
+<footer>	바닥글 영역
+<nav>	네비게이션 메뉴
+<main>	페이지 주요 내용
+<aside>	부가적인 영역 
+
+2.5 테이블 관련 태그
+<table>	표 생성
+<tr>	행(row)
+<th>	셀(헤더용)
+<td>	셀(일반 데이터)
+<thead>, <tbody>, <tfoot>	표 구조    
+<td  colspan="" >-열 합치기
+<td  rowspan="" >-행 합치기
+
+2.6 폼 관련 태그
+<form>	사용자 입력을 서버로 전송
+<input>	입력 필드
+<input 
+type= "text/password/email/number/tel/url/search/checkbox/radio/file/date/time/submit/button/reset
+name="서버 전송 키 이름"/value="값"/placeholder""/required/readonly/disabled/min=""/max=""/maxlength="">
+
+<label>	입력 필드에 대한 설명
+
+<textarea>	여러 줄 입력 필드
+<button>	버튼
+<select>	드롭다운 메뉴
+    <select>
+        <option value="1"></option>
+    </selected>
+<label><input type=""checkboc">체크박스</label>
+
+2.7 미디어 태그
+<video>	비디오 삽입
+<audio>	오디오 삽입
+<iframe>	다른 페이지 삽입
+
+2.8 스타일&스크립트 태그
+<style>	내부 CSS 정의
+<script>	자바스크립트 작성
+<link>	외부 CSS 연결
+<script src="">	외부 JS 연결
+
+가로 방향 가운데 정렬 방법  margin auto로 두기: 블록 요소 정렬(자기 자신에 적용)
+                         text-align: center : 텍스트나 인라인 요소들 정렬 (부모요소에 설정)
+
+border-collapse; collapse 태이블에서 테두리를 어떻게 합칠지 (td,th의 테두리를 합펴 하나처럼 보이게 만)

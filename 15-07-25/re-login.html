@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>re-login</title>
     <link rel="stylesheet" href="re-login.css">
+    <style>
+        body{ 
+    background: url("data:image/png;base64,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");
+}
+.container{
+    width: 400px;
+    border: 2px solid #ccc;
+    box-shadow: #ccc 0px 0px 10px;
+    border-radius: 10px;
+    margin: 40px auto;
+    background-color: white;
+}
+.img-wrapper{
+    width: 50%;
+    margin: 10px auto;
+}
+.img-wrapper img{
+    width: 100%;;
+}
+.login-wrapper{
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+}
+.login-wrapper h1{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 30px;
+}
+span{
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.l{color: #4085f3;}
+.o-1{color: #eb4235;}
+.o-2{color: #fbbf04;}
+.g{color:#4085f3}
+.i{color: #2fa950;}
+.n{color: #eb4235;}
+
+.id-input, .pw-input{
+    padding: 10px;
+}
+.id-label, .pw-label{
+    display: block;
+    font-weight: 00; 
+}
+input{
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+}
+.btn-wrapper{
+    text-align: center;
+    margin: 20px;
+}
+button{
+    display: block;
+    font-weight: 500;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.login-btn{
+    margin-bottom: 20px;
+    font-size: 15px;
+    background-color: #4085f3;
+    border: #4085f3 1px solid;
+    color: white;
+}
+.login-btn:hover{
+    background-color: #eb4235;
+    border: #eb4235 1px solid;
+    color: white;
+}
+.reset-btn{
+    font-size: 10px;
+    color: #eb4235;
+}
+.reset-btn:hover{
+    color: #fbbf04;
+}
+
+    </style>
 </head>
 <body>
     <div class="container">

@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="whoami_layout.css">
+    <style>
+        .wrapper{
+            border: 1px solid black;
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1{
+           text-align: center;
+        }
+        .h_wrapper, .ul_wrapper, .table_wrapper {
+            border: 1px dashed red;
+            padding: 20px;
+        }
+        .hilight{
+            color: red;
+        }
+        table{
+            width: 100%;
+            border: 2px solid #ccc ;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid #ccc;   
+        }
+    </style>
 </head>
 <body>
     <h1>공간 분할 태그(그룹짓기)</h1>
@@ -28,16 +52,16 @@
             <h2>학력사항</h2>
             <table>
                 <tr>
-                    <td>a</td>
-                    <td>b</td>
+                    <td colspan="2">a</td>
+                 
                     <td>c</td>
-                    <td>d</td>
+                    <td rowspan="2">d</td>
                 </tr>
                 <tr>
                     <td>b</td>
                     <td>b</td>
                     <td>b</td>
-                    <td>b</td>
+                
                 </tr>
             </table>
         </div>

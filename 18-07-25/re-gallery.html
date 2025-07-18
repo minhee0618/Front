@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+
+            position: relative;
+        }
+        .board{
+            width: 500px;
+            height: 500px;
+            background-color:#ccc;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeP6M2bHrkUnnFmAJNhNq5fjenpHz_65hh-eIzucGrN2oCBpOe9xLO3XuMjHMtqzUtpGoQQg&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeP6M2bHrkUnnFmAJNhNq5fjenpHz_65hh-eIzucGrN2oCBpOe9xLO3XuMjHMtqzUtpGoQQg&s);
+            background-position: center;
+            background-size: cover;
+        }
+        .pre{
+            width: 30px;
+            height: 60px;
+            background-color: blue;
+            border-radius: 10px 0 0 10px;
+
+            position: absolute;
+            top: 220px;
+            left: -20px;
+        }
+        .next{            
+            width: 30px;
+            height: 60px;
+            background-color: red;
+            border-radius:  0 10px 10px 0;
+            
+            position: absolute;
+            top: 220px;
+            right: -20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="board"></div>
+        <div class="pre"></div>
+        <div class="next"></div>
+    </div>
+</body>
+</html>

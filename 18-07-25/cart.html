@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1200px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 10px auto;
+        }
+        .table-wrapper caption{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 20px;
+        }
+        .table-wrapper img{
+            width: 40px;
+            height: 40px;
+        }
+        table{
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        input[type='number']{
+            padding: 5px;
+        }
+        .delete-btn{
+            font-size: 16px;
+            font-weight: 700;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .order-wrapper{
+            border: 1px dashed black;
+            margin-top: 30px;
+            text-align: right;
+        }
+        .order-wrapper p{
+            margin: 30px;
+            font-size: 16px;
+        }
+        .order-price{
+            font-size: 20px;
+            font-weight: 700;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="table-wrapper">
+            <table>
+                <caption>CART LIST 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8nCzdPgFi5PUKzMTRTNO4pYMstTaZngDbg&s">
+                </caption>
+                <thead>
+                    <tr>
+                        <td>선택</td>
+                        <td>상품명</td>
+                        <td>가격</td>
+                        <td>구매수량</td>
+                        <td>구매가격</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox">선택</td>
+                        <td> 핸드폰</td>                        
+                        <td>30,000</td>
+                        <td><input type="number" value="1"></td>
+                        <td>30,000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">선택</td>
+                        <td> 핸드폰</td>                        
+                        <td>30,000</td>
+                        <td><input type="number" value="1"></td>
+                        <td>30,000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">선택</td>
+                        <td> 핸드폰</td>                        
+                        <td>30,000</td>
+                        <td><input type="number" value="1"></td>
+                        <td>30,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="delete-btn">선택삭제</button>
+        <div class="order-wrapper">
+            <p>합계 <span class="order-price">90,000</span> 원</p>
+        </div>
+    </div>
+</body>
+</html>
