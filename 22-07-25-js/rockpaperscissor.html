@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let user, computer, result;
+
+        //반복. 승패가 날 떄 까지
+        while(true){
+            prompt("가위(0) 바위(1) 보(2) 중에서 선택 하세요")
+            computer = Math.floor( Math.random()*3 );  //0 1 2
+            //mathfloor : 
+            //math.random :
+            if ( user != computer ) break;
+        }
+        //사용자의 승 패 판단
+        if (user == 0){
+            if (computer == 2){
+                result = "사용자 승";
+            } else {
+                result = "사용자 패";
+            }
+        } else if (user == 1){
+            if (computer == 0){
+                result = "사용자 승";
+            }else {
+                result = "사용자 패";
+            }
+        } else if (user == 2){
+            if (computer ==1){
+                result = "사용자 승";
+            }else {
+                result = "사용자 패";
+            }
+        }
+
+        alert(result);
+        
+    </script>
+</body>
+</html>

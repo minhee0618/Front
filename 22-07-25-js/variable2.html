@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    /*    //변수에 누적하기
+
+        let cnt =1;         //변수선언 및 초기화
+                            //변수를 선언하면서 값 지정 = 변수 초기화
+
+        cnt = 1;
+    //    console.log (cnt);
+
+        cnt = 2;
+    //    console.log (cnt);
+
+        cnt = 3;
+        console.log  (cnt);  // 3 으로 출력
+    */
+
+     let cnt =1;
+
+     cnt =/*오른쪽 먼저 수행 결과값 2*/ cnt + 1;
+     console,log(cnt); /*2*/
+
+     cnt = /*오른쪽 먼저 수행 결과값 3*/cnt + 1;
+     console.log (cnt); /*3*/
+
+     cnt = /*오른쪽 먼저 수행 결과값 4*/cnt + 1;
+     console.log (cnt); /*4*/
+    </script>
+</body>
+</html>
