@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //prompt 이용해 이름 입력받기
+        //입력된 이름이 stop이면 종료
+       
+        /*
+        let name1 = prompt();
+        alert(name1);
+
+        let name2 = prompt();
+        alert(name2);
+
+        let name3 = prompt();
+        alert(name3);
+        */
+
+        /*
+        for(let i=1; i<=3; i++ ){
+            let name3 = prompt();
+            alert(name3);
+        }
+         */
+
+        while(true){       //무한루프 -> 반드시 탈출조건을 줘야한다
+            let name = prompt();
+            if( name === stop) break;    //자신이 속한 반복문을 탈출 시켜준다 
+            
+            alert(name);
+        }
+    </script>
+</body>
+</html>

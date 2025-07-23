@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //연산자는 연산의 결과가 반드시 발생한다
+
+        /* 산술연산자 
+         +   // 덧셈  
+         -   // 뺄셈  
+         *   // 곱셈  
+         /   // 나눗셈   
+         %   // 나머지 
+         */
+     
+// 덧셈 + 
+    let a = 10;
+    let b = 20;
+
+    let result = a + b ;
+    console.log(result);
+// 뺄셈  - 
+    let c = 15;
+    let d = 5;
+    
+    let result2 = c - d;
+    console.log(result2);
+ // 곱셈  *
+    let e = 4;
+    let f = 3;
+    
+    let result3 = e * f;
+    console.log(result3);
+ // 나눗셈  /
+    let g = 21;
+    let h = 4;
+    
+    let result4 = g / h;
+    console.log(result4);   // => 5.25
+    // 몫만 가지고 싶다면 
+    let result5 = Math.floor(result4);
+    console.log(result5);
+
+ // 나머지  %
+    let i = 10;
+    let j = 3;
+
+    let result6 = i % j;
+    console.log(result6);  //=> 1 (짝.홀수 판별에 사용)
+
+        //짝수 판별
+        let num2 = 10;
+        let num2AB = num2 % 2;  // 0 or 1
+
+        if (num2AB == 0){
+            console.log("짝수");
+        }else{
+            console.log("홀수");
+        }
+//거듭제곱
+        let base = 2;
+        let expo = 3;
+        let result7 ;
+        result7 = base ** expo;
+
+        console.log(result7);
+    </script>
+</body>
+</html>
