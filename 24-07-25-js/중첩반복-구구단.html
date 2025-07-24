@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        document.write("3*1=" + 3 * 1 + "<br>");
+        document.write("3*2=" + 3 * 2 + "<br>");
+        document.write("3*3=" + 3 * 3 + "<br>");
+        document.write("3*4=" + 3 * 4 + "<br>");
+        document.write("3*5=" + 3 * 5 + "<br>");
+        document.write("3*6=" + 3 * 6 + "<br>");
+        document.write("3*7=" + 3 * 7 + "<br>");
+        document.write("3*8=" + 3 * 8 + "<br>");
+        document.write("3*9=" + 3 * 9 + "<br>");
+
+        for (let i = 1; i <= 9; i++) {
+        document.write("3*" + i + "=" + 3 * i + "<br>");
+        }
+        */
+
+        //1단
+        for (let i = 1; i <= 9; i++) {
+            document.write(1 * i + "<br>");
+        }
+        //2단
+        for (let i = 1; i <= 9; i++) {
+            document.write(2 * i + "<br>");
+        }
+        //3단
+        for (let i = 1; i <= 9; i++) {
+            document.write(3 * i + "<br>");
+        }
+        //4단
+        for (let i = 1; i <= 9; i++) {
+            document.write(4 * i + "<br>");
+        }
+        //5단
+        for (let i = 1; i <= 9; i++) {
+            document.write(5 * i + "<br>");
+        }
+        //6단
+        for (let i = 1; i <= 9; i++) {
+            document.write(6 * i + "<br>");
+        }
+        //7단
+        for (let i = 1; i <= 9; i++) {
+            document.write(7 * i + "<br>");
+        }
+        //8단
+        for (let i = 1; i <= 9; i++) {
+            document.write(8 * i + "<br>");
+        } 
+        //9단
+        for (let i = 1; i <= 9; i++) {
+            document.write(9 * i + "<br>");
+        } 
+        
+        document.write("=====>=======> <br>");
+
+        ////////////////전체구구단 중첩 반복문 사용//////////////
+        for ( let k=2; k<=9; k++){     //2-9 반복
+            //k단 출력
+            document.write(k +"단 출력" + "<br>");
+
+            for(let i=1; i<=9; i++){
+                document.write( k*i + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

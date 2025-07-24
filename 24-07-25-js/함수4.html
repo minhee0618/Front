@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //함수 입력(매개변수) / 반환(기능한 수행값 돌려준다)
+        function 양치질ver3( cnt ){
+            let result;
+            document.write(`치약을 짠다 <br>`);
+            document.write(`양치질 한다 <br>`);
+            document.write(`입을 헹군다 4 ${cnt} 번 <br>`);            
+        }
+        result=1;
+        return result;
+
+        let 걸린시간 = 양치질ver3(3);
+        console.log(걸린시간);
+
+        if(걸린시간 < 2){
+            alert("다음부턴 2분 이상 하세요");
+        }
+    </script>
+</body>
+</html>
