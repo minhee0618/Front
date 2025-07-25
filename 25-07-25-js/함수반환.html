@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수가 값을 반환해야 하는 이유
+        // =>계산 결과나 처리 결과를 함수 바깥에서 사용하기 위해
+        
+        //*************출력***************/
+        
+        //1.함수 X 명령
+        let money =1000;
+        let result0 = money*2
+        alert(result0);  
+
+        //2.1 함수
+        function doubleMoney(){
+            let money = 1000;
+            let result = money*2;
+            alert(result);
+        }
+        doubleMoney();
+
+        /**이름: doubleMoney2  
+         * 기능: 매개변수로 전달된 금액을 2배 출력
+         * 입력(매개변수) : 금액
+         * 반환 X
+        **/
+
+        //2.2 함수
+        function doubleMoney2(money){
+            let result = money*2;
+            alert(result);
+        }
+        doubleMoney2(3000);
+
+        //*************반환***************/
+        function doubleMoney3(money){
+            let result = money*2;
+            return result;
+        }
+        let resultMoney = doubleMoney2(3000);
+        alert(resultMoney);
+
+
+
+        function E(money){
+            let result = money *2;
+            return result;
+        }
+
+        let result1 = E(100);
+        alert(result1);    ///200 (함수 반환 이유: 함수 밖에서도 사용하고 싶어서)
+
+        //
+        let result2 = E(result1);
+        alert(result2);    //400 
+    </script>
+</body>
+</html>

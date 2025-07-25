@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--3.  구구단을 출력하는 함수 만들기  ( 단  -> 해당 단을 출력하기  )-->
+    <script>
+        let input = prompt("구구단을 출력합니다. 해당 단을 입력하세요");
+
+        function multiple(num){
+
+            document.write(`${num} 단 <br>`);
+            for(let i=1; i<=9; i++){
+                document.write(`${num} X ${i} = ${num * i} <br>`);
+            }
+        }
+
+        multiple(parseInt(input));
+    </script>
+</body>
+</html>

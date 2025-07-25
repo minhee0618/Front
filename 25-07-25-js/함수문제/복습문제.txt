@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+1)아래 함수가 출력하는 값은 무엇인가요?
+ 
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log( greet("함수") );
+
+==> Hello 함수!
+
+2) 출력된  result  ,a변수의 출력값은?
+
+let a=10, b=7;
+++a;
+let result  = a++  +  --b;
+
+console.log( result) ;
+console.log( a) ;
+
+==> 17
+    12
+
+3) 
+ let  items = [ "벤츠 S클래스",  "샤넬백" , "금100돈" ,  "파인다이닝"  ]; 
+ 금100돈  값을 출력하는 방법은?
+ 
+ ==> items[2]
+
+4)  다음코드의 실행결과는?
+
+    let a=10;
+
+    if(a++ % 2  ==0) {
+         console.log("짝수";
+    }else{
+         console.log("홀수");
+    }
+
+==> 짝수 
+-->
+
+</body>
+</html>

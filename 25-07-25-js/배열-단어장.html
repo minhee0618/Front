@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+         
+
+// 단어 56개 저장하기 :2달 
+
+//1.변수저장, 출력
+let word1 ="apple";
+let word2 ="banana";
+let word3 ="cat";
+let word4 ="dog";
+//.....
+
+console.log( word1);
+
+
+//1차원배열 (변수를 연속적으로 7개 사용) : 변수의 집합 , 배열의 요소가 변수 한 개 의미
+
+let week1 = [ "apple","banana","cat", "dog","elephant","flower","guitar" ];
+let week2 = [ "house","internet","jungle","kangaroo","lion","moon","nest" ];
+let week3 = [ "orange","piano","queen","rabbit","sun","tree","umbrella" ]; 
+let week4 = [ "vase","water","xylophone","yacht","zebra","ant","ball" ];
+
+let week5=  [ "car","door","egg","fire","garden","hat","ice" ];
+let week6=  [ "jacket","key","lamp","mouse","note","orange","pencil"];
+let week7=  [ "queen","rain","sun","table","umbrella","vase","water"];
+let week8=  [ "xylophone","yacht","zebra","apple","banana","cat","dog"];
+
+ console.log(  week1[0]);   //apple
+ console.log(  week1[1]);   //banana
+ console.log(  week1[2]);   //cat
+ console.log(  week3[3]);   //rabbit
+ console.log(  week4[4]);   //zebra
+ console.log(  week5[5]);   //hat
+ console.log(  week6[6]);   //pencil
+
+
+// 2차원배열 
+// 1차원배열의 집합 : 배열의 요소 가 1차원 배열 한 개 의미 
+
+
+let month1 = [ 
+                [ "apple","banana","cat", "dog","elephant","flower","guitar" ],
+                [ "house","internet","jungle","kangaroo","lion","moon","nest" ],
+                [ "orange","piano","queen","rabbit","sun","tree","umbrella" ],
+                [ "vase","water","xylophone","yacht","zebra","ant","ball" ]
+             ] ;
+
+
+let month2=  [  
+                [ "car","door","egg","fire","garden","hat","ice" ],
+                [ "jacket","key","lamp","mouse","note","orange","pencil"],
+                [ "queen","rain","sun","table","umbrella","vase","water"],
+                [ "xylophone","yacht","zebra","apple","banana","cat","dog"],
+             ];
+
+// 행정보, 열정보
+console.log(month1[0][0]);  //apple
+console.log(month1[1][3]);  //kangaroo
+console.log(month2[3][4]);  //banana
+console.log(month2[2][5]);  //vase
+
+console.log("이차원 배열-------");
+ 
+console.log(month1.length);      //행의 개수
+console.log(month1[0].length);   //열의 개수 
+
+//2차원 배열 전체출력
+
+
+    //t-행정보 i-열정보
+    for(let t=0; t < month1.length; t++){
+        
+        for(let i=0; i<month1[t].length; i++){
+            console.log(month1[t][i]);
+        }
+    }
+    
+
+// 3차원 배열 
+//  2차원 배열의 집합 : 배열의 요소가 2차원 배열 한 개 의미
+
+let word_year  = [
+            //month1 
+            [
+                [ "apple","banana","cat", "dog","elephant","flower","guitar" ],
+                [ "house","internet","jungle","kangaroo","lion","moon","nest" ],
+                [ "orange","piano","queen","rabbit","sun","tree","umbrella" ],
+                [ "vase","water","xylophone","yacht","zebra","ant","ball" ]
+            ],
+            //month2
+            [  
+                [ "car","door","egg","fire","garden","hat","ice" ],
+                [ "jacket","key","lamp","mouse","note","orange","pencil"],
+                [ "queen","rain","sun","table","umbrella","vase","water"],
+                [ "xylophone","yacht","zebra","apple","banana","cat","dog"],
+            ]
+];
+
+console.log("3차원 배열-------");
+console.log(  word_year[0][0][0]); 
+// 면, 행, 열 정보
+
+for(let y=0; y<word_year.length; y++ )
+    for(let m=0; m<word_year[y].length; m++)
+        for(let d=0; d<word_year[y][m].length; d++){
+            console.log(word_year[y][m][d]);
+        }
+
+  </script>
+</body>
+</html>

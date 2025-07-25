@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--4.  사각형의 넓이를 구하는 함수 만들기  (가로, 세로  -> 넓이를 반환하기  )-->
+    <script>
+        let width = prompt("사각형의 넓이를 구하기 위해 가로길이(cm) 를 입력하세요");
+        let height = prompt("사각형의 넓이를 구하기 위헤 세로길이(cm)을 입력하세요");
+
+        function area(){
+            document.write(`가로길이${width}cm 세로길이${height}cm 
+            <br>사각형의 넓이는 ${width * height}cm<sup>2</sup>입니다 `);
+        }
+
+        area(parseInt(width, height));
+    </script>
+</body>
+</html>
