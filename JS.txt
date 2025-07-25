@@ -145,3 +145,11 @@ Html/Css
 https://special-rainstorm-825.notion.site/HTML-CSS-173c031ede41807181ccf2d167d03650
 JavaScript
 https://special-rainstorm-825.notion.site/80ea7d581089470fb9253da88dc7bdac
+
+git hub
+git config --global user.name "minhee0618"
+git config --global user.email "minheee3616@gmail.com"
+
+git add  .
+git commit -m "메시지"
+git push  origin main
