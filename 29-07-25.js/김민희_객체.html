@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let MH = {
+        name: "김민희",
+        age: 27,
+        gender: "female",
+        mbti: "INFJ",
+        birth: "6월 18",
+        nationality: "Republic of Korea",
+        major: "Computer Engineering",
+        skills: {
+          frontEnd: ["HTML", "CSS", "JavaScript", "C++"],
+          backEnd: ["Node.js", "Firebase"],
+          tool: ["VSCode", "Git", "Figma"],
+        },
+
+        showInfo: function () {
+          alert(`${this.name} 정보 입니다.`);
+        },
+
+        meInfo: function (type) {
+          type = type.toLowerCase();
+
+          if (type === "skills") {
+            let subType = prompt(
+              "skills 중 궁금한 분야를 입력하세요:\nfrontEnd, backEnd, tool"
+            );
+            subType = subType.toLowerCase();
+            alert(subType);
+
+            let subTypeList = this.skills[subType];
+
+            let result = "";
+            for (let i = 0; i < subTypeList.length; i++) {
+              console.log(subTypeList[i]);
+              result += subTypeList[i] + ", ";
+            }
+
+            console.log(result);
+            alert(result);
+          }
+
+          if (
+            (type === "name",
+            "age",
+            "gender",
+            "mbti",
+            "birth",
+            "nationality",
+            "major")
+          ) {
+            return this[type];
+          } else {
+            return "존재하지 않는 정보입니다.";
+          }
+
+          alert(this[type]);
+        },
+      };
+
+      MH.showInfo();
+      let type = prompt(
+        "궁금한 정보를 입력해주세요:\nname, age, gender, mbti, birth, nationality, major, skills"
+      );
+      let result = MH.meInfo(type);
+      alert(result);
+    </script>
+  </body>
+</html>
