@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .wrapp {
+        width: 100px;
+        height: 100px;
+        border: 1px solid orange;
+      }
+    </style>
+
+    <script>
+      function styleToggle() {
+        //alert("hi");
+
+        const wrap = document.querySelector(".wrap");
+        console.log("wrap");
+        wrap.classList.toggle(a); //a클래스 토글(한번 실행, 취소)
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrap"></div>
+    <button omclick="styleToggle()">스타일 적용 토글</button>
+  </body>
+</html>

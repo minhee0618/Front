@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script>
+      //회원메뉴 클릭시
+      //회원영역 보이기, 비회원영역 안보이기
+      function showMember() {
+        //alert("hi");
+      }
+      function showNoMember() {
+        //alert("hi");
+        const member = document.querySelector(".member");
+        const nomember = document.querySelector(".member");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 탭메뉴-->
+      <div class="tab-menu">
+        <div onclick="showMember()">회원</div>
+        <div onclick="showNoMember()">비회원</div>
+      </div>
+
+      <!--회원로그인-->
+      <div class="member active">회원 화면************</div>
+
+      <!--비회원로그인 -->
+      <div class="noMember">비회원 화면 *************</div>
+    </div>
+  </body>
+</html>
