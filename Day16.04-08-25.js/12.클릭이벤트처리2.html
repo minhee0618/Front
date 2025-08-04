@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // const  btn  =  document.getElementById("btn");
+      // console.log( btn);  =>null 출력.  -- 선택되지 않는다!!
+    </script>
+  </head>
+  <body>
+    <h2>자바스크립트로 이벤트 처리하기 : 이벤트 속성 사용하기</h2>
+    <button id="btn">클릭</button>
+
+    <!-- button 선택하기 
+     1.body 아래에 선택하는 명령 ( document.getElementById 선택)
+     2.문서가 모두 로드된 후 명령이 실행되도록 하기-->
+
+    <script>
+      const btn = document.getElementById("btn");
+      console.log(btn);
+      btn.onclick = function () {
+        alert("안녕^^");
+      };
+    </script>
+  </body>
+</html>
